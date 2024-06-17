@@ -17,8 +17,7 @@ tokenizer = AutoTokenizer.from_pretrained("MILVLG/imp-v1-3b", trust_remote_code=
 # Global variable to store uploaded image path
 uploaded_image_path = ""
 
-# Function to preprocess image
-# ... (your preprocessing code here)
+
 
 # Function to display the uploaded image
 def display_image(image_path):

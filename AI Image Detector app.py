@@ -11,12 +11,12 @@ torch.set_default_device("cuda")
 model = AutoModelForCausalLM.from_pretrained(
     "MILVLG/imp-v1-3b",
     torch_dtype=torch.float16,
+     device_map="cuda",
     trust_remote_code=True)
 tokenizer = AutoTokenizer.from_pretrained("MILVLG/imp-v1-3b", trust_remote_code=True)
 
 # Global variable to store uploaded image path
 uploaded_image_path = ""
-
 
 
 # Function to display the uploaded image
@@ -27,6 +27,19 @@ def display_image(image_path):
 
     canvas.create_image(250, 450, image=uploaded_photo)  # Adjusted coordinates to center in left rectangle
     canvas.image = uploaded_photo
+
+from PIL import Image
+from torchvision import transforms
+
+def preprocess_image(image):
+    preprocess = transforms.Compose([
+        transforms.Resize((224, 224)),
+        transforms.ToTensor(),
+        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+    ])
+    image_tensor = preprocess(image).unsqueeze(0)  # Add batch dimension
+    return image_tensor
+
 
 # Function to handle drag-and-drop event
 def on_drop(event):

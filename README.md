@@ -34,6 +34,20 @@ Lens: AI Image Detection is a GUI application designed to determine whether an i
 
 - **Figure 1**: Initial GUI Layout
   ![image](https://github.com/SreevadanMulugu/Lens-AI-Image-Detection/assets/64011908/3ffea274-81a7-4ad7-8420-035124d0f395)
+- **Figure 2**: Upload Image
+   ![image](https://github.com/user-attachments/assets/17bf197f-a552-4673-a1e0-d9525f760957)
+  ![image](https://github.com/user-attachments/assets/d569bf8b-f05b-4c98-a39c-8c7d713b9725)
 
-- **Figure 2**: Processed Image Result
+  ![image](https://github.com/user-attachments/assets/9113af45-2db5-4f8e-9725-91b7de9f011f)
+
+
   ![image](https://github.com/SreevadanMulugu/Lens-AI-Image-Detection/assets/64011908/3c8f2b26-05d6-4084-8271-dcbc097fe69f)
+  ![image](https://github.com/user-attachments/assets/e3911ba3-2270-4576-a0eb-799b3d89e2e2)
+
+  ![image](https://github.com/user-attachments/assets/6525944a-4485-4d93-b34a-affab0dff9ce)
+  ![image](https://github.com/user-attachments/assets/f2b97872-6c6b-4bb5-a199-f800502efe40)
+ 
+  
+
+
+
